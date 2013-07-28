@@ -9,7 +9,9 @@ gem 'jquery-rails'
 gem 'jbuilder', '~> 1.2'
 gem "pg"
 gem "devise", github: "plataformatec/devise", branch: "rails4"
-gem "glass-rails", "0.1.6"
+gem 'omniauth'
+gem 'omniauth-google-oauth2'
+gem "glass-rails", "1.0.0"
 gem "pry"
 group :doc do
   gem 'sdoc', require: false

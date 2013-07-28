@@ -59,7 +59,7 @@ GEM
     extlib (0.9.16)
     faraday (0.8.8)
       multipart-post (~> 1.2.0)
-    glass-rails (0.1.6)
+    glass-rails (1.0.0)
       google-api-client
       railties (>= 3.1)
     google-api-client (0.6.4)
@@ -72,7 +72,9 @@ GEM
       multi_json (>= 1.0.0)
       signet (~> 0.4.5)
       uuidtools (>= 2.1.0)
+    hashie (2.0.5)
     hike (1.2.3)
+    httpauth (0.2.0)
     i18n (0.6.4)
     jbuilder (1.5.0)
       activesupport (>= 3.0.0)
@@ -93,6 +95,21 @@ GEM
     minitest (4.7.5)
     multi_json (1.7.7)
     multipart-post (1.2.0)
+    oauth2 (0.8.1)
+      faraday (~> 0.8)
+      httpauth (~> 0.1)
+      jwt (~> 0.1.4)
+      multi_json (~> 1.0)
+      rack (~> 1.2)
+    omniauth (1.1.4)
+      hashie (>= 1.2, < 3)
+      rack
+    omniauth-google-oauth2 (0.2.0)
+      omniauth (~> 1.0)
+      omniauth-oauth2
+    omniauth-oauth2 (1.1.1)
+      oauth2 (~> 0.8.0)
+      omniauth (~> 1.0)
     orm_adapter (0.4.0)
     pg (0.16.0)
     polyglot (0.3.3)
@@ -163,9 +180,11 @@ PLATFORMS
 DEPENDENCIES
   coffee-rails (~> 4.0.0)
   devise!
-  glass-rails (= 0.1.6)
+  glass-rails (= 1.0.0)
   jbuilder (~> 1.2)
   jquery-rails
+  omniauth
+  omniauth-google-oauth2
   pg
   pry
   rails (= 4.0.0)

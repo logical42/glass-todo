@@ -2,6 +2,7 @@ class GoogleAccount < ActiveRecord::Base
   belongs_to :user
   before_create :generate_verification_secret
   after_create :subscribe_to_google_notifications
+
   def token_expiry
     Time.at(self.expires_at)
   end

@@ -24,6 +24,7 @@ class Glass::TodoCreator < Glass::TimelineItem
 
 
   def custom_action_handler(response)
+    binding.pry
     ## logic for handling custom action
     ##
     ## response is a hash object which google sends back 
